@@ -80,7 +80,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 90px;
     background-image: linear-gradient( to right, rgb(255, 82, 183), rgb(89, 0, 255), rgb(255, 0, 149));
     display: flex;
@@ -121,7 +121,7 @@ nav li {
 nav li:after {
     content: "";
     position: absolute;
-    width: 0%;
+    width: 0vw;
     height: 1px;
     display: block;
     transition: all 0.3s ease;
@@ -149,22 +149,6 @@ hr {
     top: 19.75vh;
     right: 12vw;
     width: 300px;
-}
-
-#estrela_kirby1 {
-    position: absolute;
-    width: 60px;
-    right: 24vw;
-    top: 32vh;
-    rotate: 70deg;
-}
-
-#estrela_kirby2 {
-    position: absolute;
-    width: 50px;
-    right: 22vw;
-    top: 40vh;
-    rotate: 40deg;
 }
 
 article {
@@ -240,16 +224,18 @@ main {
 
 #sobre_mim {
     margin-top: 200px;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    padding-bottom: 20px;
     background-image: url(imagens_textos_videos/background_about.jpg);
     background-size: cover;
     margin-inline: auto;
 }
 
 #contentsobremim {
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
     display: flex;
-    justify-content: space-between;
 }
 
 #perfil {
@@ -257,6 +243,11 @@ main {
     align-items: center;
     font-size: large;
     margin-inline: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #perfil h3{
@@ -269,13 +260,32 @@ main {
     line-height: 30px;
 }
 
-#contentsobremim hr {
-    height: 370px;
+#contentsobremim .box1 {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: -webkit-center;
+}
+
+#infnet {
+    display: flex;
+    gap: 20px;
+    height: 75px;
+    width: 270px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0, 85, 165), rgb(91, 181, 255));
+    border-radius: 20px;
+}
+
+#infnet img {
+    width: 80px;
+    height: 80px;
 }
 
 #content_projetos {
     margin-inline: 30px;
-
 }
 
 #curriculo {
@@ -283,6 +293,9 @@ main {
     align-items: center;
     margin-inline: 30px;
     font-size: larger;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #icon_curriculo {
@@ -306,7 +319,7 @@ main {
 
 #habilidades {
     margin-inline: 50px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: black;
     margin-inline: auto;
@@ -448,7 +461,7 @@ main {
 }
 
 #projetos {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding-bottom: 20px;
     background-image: url(imagens_textos_videos/background_about.jpg);
@@ -473,7 +486,7 @@ main {
 
 .boxes_projetos {
     width: 25vw;
-    height: 500px;
+    height: 70vh;
     background-color: rgb(59, 59, 59);
     padding-top: 20px;
     padding-inline: 20px;
@@ -484,7 +497,7 @@ main {
 .boxes_projetos p {
     color: rgb(0, 238, 255);
     font-family: texto;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
@@ -498,7 +511,7 @@ main {
     border: 5px rgb(255, 0, 255) solid;
 }
 
-.boxes_projetos img:hover {
+.boxes_projetos:hover  img {
     border: 5px rgb(255, 255, 255) solid;
 }
 
@@ -507,15 +520,8 @@ main {
     display: flex;
 }
 
-#contentsobremim {
-    margin: auto;
-    display: flex;
-}
-
-
-
 footer {
-    width: 100%;
+    width: 100vw;
     height: 200px;
     background-color: rgb(0, 0, 0);
     display: flex;
