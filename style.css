@@ -43,6 +43,7 @@ body {
     background-attachment: fixed;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 @keyframes buttom {
@@ -146,7 +147,7 @@ hr {
 
 #kirby {
     position: absolute;
-    top: 19.75vh;
+    top: 19.57vh;
     right: 12vw;
     width: 300px;
 }
@@ -211,7 +212,7 @@ main {
 }
 
 .inciosecao {
-    height: 100px;
+    height: 12vh;
     display: flex;
     margin: auto;
     align-items: center;
@@ -225,7 +226,7 @@ main {
 #sobre_mim {
     margin-top: 200px;
     width: 100vw;
-    padding-bottom: 20px;
+    height: 100vh;
     background-image: url(imagens_textos_videos/background_about.jpg);
     background-size: cover;
     margin-inline: auto;
@@ -238,8 +239,17 @@ main {
     display: flex;
 }
 
-#perfil {
+#contentsobremim .box {
     width: 50%;
+    height: 88vh;
+    align-items: center;
+    justify-content: center;
+    text-align: -webkit-center;
+}
+
+#perfil {
+    width: 80%;
+    height: 30%;
     align-items: center;
     font-size: large;
     margin-inline: 30px;
@@ -260,11 +270,58 @@ main {
     line-height: 30px;
 }
 
-#contentsobremim .box1 {
-    width: 50%;
+#cat {
+    background-color: rgb(201, 196, 196);
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    margin-top: 20vh;
+    margin-left: -30vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: -webkit-center;
+    border: black solid 3px;
+}
+
+@keyframes cat_talk{
+    0% {opacity: 1;}
+    50% {opacity: 0.2;}
+    100% {opacity: 1;}
+}
+
+.talk_circle {
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 100%;
+    position: absolute;
+    animation-name: cat_talk;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#talk1 {
+    width: 35px;
+    height: 35px;
+    left: 52vh;
+    animation-delay: 2s;
+    margin-top: -10vpx;
+}
+
+#talk2 {
+    width: 25px;
+    height: 25px;
+    left: 57vh;
+    animation-delay: 1s;
+    margin-top: 9vh;
+}
+
+#talk3 {
+    width: 18px;
+    height: 18px;
+    left: 50vh;
+    margin-top: 15vh;
+    animation-delay: 0s;
 }
 
 #infnet {
@@ -282,39 +339,6 @@ main {
 #infnet img {
     width: 80px;
     height: 80px;
-}
-
-#content_projetos {
-    margin-inline: 30px;
-}
-
-#curriculo {
-    width: 50%;
-    align-items: center;
-    margin-inline: 30px;
-    font-size: larger;
-    background-color: aliceblue;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#icon_curriculo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color:  rgb(0, 204, 255);
-    margin-inline: auto;
-}
-
-#icon_curriculo img {
-    width: 40px;
-    height: 40px;
-}
-
-#curriculo h3 {
-    font-size: 20px;
 }
 
 #habilidades {
@@ -470,6 +494,10 @@ main {
     border-bottom: 5px solid black;
 }
 
+#content_projetos {
+    margin-inline: 30px;
+}
+
 #box_projetos {
     justify-content: center;
     display: flex;
@@ -527,7 +555,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    display: flex;
     margin-inline: auto;
     margin-bottom: 50px;
     font-size: large;
@@ -539,8 +566,8 @@ footer {
     margin-inline: 0px;
     border: 3px solid rgb(255, 82, 183);
     border-radius: 100%;
-    height: 100%;
-    transform: rotate(-50deg);
+    height: 80%;
+    transform: rotate(-20deg);
 }
 
 
@@ -557,8 +584,8 @@ footer {
     margin-inline: 0px;
     border: 3px solid rgb(255, 17, 156);
     border-radius: 100%;
-    height: 100%;
-    transform: rotate(50deg);
+    height: 80%;
+    transform: rotate(20deg);
 }
 
 
