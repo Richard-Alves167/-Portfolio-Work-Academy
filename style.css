@@ -251,7 +251,7 @@ main {
     width: 80%;
     height: 30%;
     align-items: center;
-    font-size: large;
+    font-size: 1.3vw;
     margin-inline: 30px;
     background-color: aliceblue;
     border: black 3px solid;
@@ -329,17 +329,19 @@ main {
 .box h3 {
     margin-top: 50px;
     font-size: 30px;
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(233, 233, 233);
+    border: 1px solid black;
     border-radius: 30px;
     padding: 10px;
     width: 50%;
+    margin-bottom: 4vw;
 }
 
 #infnet {
     display: flex;
     gap: 20px;
-    height: 75px;
-    width: 270px;
+    height: 5vw;
+    width: 20vw;
     padding: 20px;
     justify-content: center;
     align-items: center;
@@ -348,16 +350,16 @@ main {
 }
 
 #infnet h4{
-    font-size: 20px;
+    font-size: 1.2vw;
     margin-bottom: 10px;
 }
 
 #infnet p {
-    font-size: 16px;
+    font-size: 1vw;
 }
 #infnet img {
-    width: 80px;
-    height: 80px;
+    width: 5.5vw;
+    height: 5.5vw;
 }
 
 #habilidades {
@@ -539,12 +541,17 @@ main {
     padding-inline: 20px;
     border-radius: 20px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
 }
 
 .boxes_projetos p {
     color: rgb(0, 238, 255);
     font-family: texto;
     font-size: 20px;
+    overflow-y: auto;
 }
 
 
@@ -553,18 +560,44 @@ main {
     border: 5px black solid;
 }
 
-.boxes_projetos img {
+.projetos {
     width: 95%;
     border: 5px rgb(255, 0, 255) solid;
 }
 
-.boxes_projetos:hover  img {
+.boxes_projetos:hover .projetos{
     border: 5px rgb(255, 255, 255) solid;
+}
+
+.boxes_projetos:hover .divGitHub{
+    background-color: rgb(255, 255, 255);
+    color: rgb(157, 0, 157);
+}
+
+.iconeCard {
+    width: 2vw;
+    height: 2vw;
 }
 
 .projeto {
     margin-inline: auto;
     display: flex;
+}
+
+.divGitHub {
+    width: 100%;
+    height: 10%;
+    text-align: -webkit-center;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    background-color: rgb(157, 0, 157);
+    font-size: 1.7vw;
+    padding-inline: 20px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    margin-left: -20px;
+    border-top: #fff 2px solid;
 }
 
 footer {
